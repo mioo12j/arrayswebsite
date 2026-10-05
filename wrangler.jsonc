@@ -1,0 +1,11 @@
+{
+  // Cloudflare Workers static-assets config (repo root).
+  // Serves the built Vite app (client/dist) with SPA routing — deep links fall
+  // back to index.html. "name" must match your Cloudflare Worker's name.
+  "name": "arrayswebsite",
+  "compatibility_date": "2025-05-01",
+  "assets": {
+    "directory": "./client/dist",
+    "not_found_handling": "single-page-application"
+  }
+}

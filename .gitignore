@@ -1,0 +1,21 @@
+# Internal tooling / editor files — not part of the application
+.vscode/
+.idea/
+
+# Dependencies & build output
+node_modules/
+dist/
+build/
+
+# Env & logs
+.env
+*.log
+server/server.log
+server/server.err*.log
+
+# Runtime artifacts — backups and uploaded files stay local, never committed
+server/backups/
+
+# OS
+.DS_Store
+Thumbs.db

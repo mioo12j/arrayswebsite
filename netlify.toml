@@ -1,0 +1,14 @@
+# Netlify config for the ARRAYS INGENIERIA ERP frontend (Vite SPA in client/).
+[build]
+  base = "client"
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# SPA routing: every path serves index.html so client-side routes work.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

@@ -1,0 +1,16 @@
+{
+  "name": "arrayswebsite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ARRAYS INGENIERIA — ERP & Financial Intelligence Platform (monorepo)",
+  "author": "Siddhant Kumar",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "db:migrate": "npm run migrate --prefix server",
+    "db:seed": "npm run seed --prefix server",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client"
+  }
+}

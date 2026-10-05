@@ -1,0 +1,36 @@
+{
+  "name": "ingenieria-erp-client",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Siddhant Kumar",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@radix-ui/react-label": "^2.1.9",
+    "@radix-ui/react-slot": "^1.2.5",
+    "axios": "^1.7.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.40.0",
+    "jsqr": "^1.4.0",
+    "lucide-react": "^0.408.0",
+    "pdfjs-dist": "^4.0.379",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.24.1",
+    "recharts": "^2.12.7",
+    "tailwind-merge": "^3.6.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "vite": "^5.3.3"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["-y", "chrome-devtools-mcp@latest"]
+    },
+    "magic": {
+      "command": "npx",
+      "args": ["-y", "@21st-dev/magic@latest", "API_KEY=\"REPLACE_WITH_YOUR_21ST_DEV_API_KEY\""]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+# Render Blueprint for the ARRAYS INGENIERIA ERP backend (Node web service).
+# In Render: New → Blueprint → connect this repo. Set DATABASE_URL + JWT_SECRET
+# + CLIENT_ORIGIN in the dashboard (marked sync:false so they're not committed).
+services:
+  - type: web
+    name: ingenieria-erp-api
+    runtime: node
+    rootDir: server
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL          # from Neon (postgresql://...sslmode=require)
+        sync: false
+      - key: JWT_SECRET            # any long random string
+        sync: false
+      - key: CLIENT_ORIGIN         # your Pages/Netlify URL, e.g. https://app.pages.dev
+        sync: false

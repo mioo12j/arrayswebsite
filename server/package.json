@@ -1,0 +1,43 @@
+{
+  "name": "ingenieria-erp-server",
+  "version": "1.0.0",
+  "description": "ARRAYS INGENIERIA — ERP & Financial Intelligence Platform (API)",
+  "author": "Siddhant Kumar",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "seed": "node src/db/seed.js",
+    "migrate": "node src/db/migrate.js",
+    "migrate:cols": "node src/db/ensure-columns.mjs",
+    "clear": "node src/db/clear-data.js",
+    "reset-production": "node src/db/reset-production.js",
+    "import-company": "node src/db/import-company.js",
+    "sync": "node src/db/sync-to-cloud.js",
+    "gst:seed": "node src/db/gst-seed.js",
+    "gst:demo": "node src/db/gst-demo.js"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "docx": "^9.7.1",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "pdfjs-dist": "^4.7.76",
+    "pdfkit": "^0.15.0",
+    "pg": "^8.12.0",
+    "qrcode": "^1.5.4",
+    "tesseract.js": "^5.1.0",
+    "xlsx": "^0.18.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
